@@ -1,0 +1,49 @@
+
+
+
+*Date() : Date object is used to display current date & time.
+This object can created by using 'Date()' constructor.
+'new Date()' creates a date object with the current date and time.
+syntax:   const d = new Date();
+where, 'd' stores a constant value of current date & time from date object 
+created by 'Date()' constructor.
+
+*Object{ key:value,---,--,---}: 
+A javaScript object is an entity having state and behavior (properties and method).
+The syntax of 'creating object' using 'object literal' is given below:
+object={property1:value1,property2:value2.....propertyN:valueN}  
+
+*'Date()' object has various methods:
+getDate() - To Get day as a number (1-31).
+getMonth() - To Get month as a number (0-11).
+getFullYear() - To Get year as a four digit number (yyyy).
+
+*'months' array taking 12 values indexing from 0 to 12
+representing no. of days per 12 months in a year.
+
+Initially,We are i)getting today's date and ii)accepting a date inserted by user.
+
+We are splitting user inserted date into separate sections as-
+date, month & year respectively and storing these parts into an object.
+
+Similarly, we are splitting today's date into sections as-
+crrentDate, currentMonth & currentYear respectively.
+
+Using combinations of both the splittings we are checking
+for the valid input inserted by a user.
+Also, we are checking whether currentYear is a Leap year or not
+and proceed further with a result by leapChecker() function.
+(Because in case of leap year, we have to count 29 days for February
+'months[1] = 29;', where array index '1' of an array 'months' indicates February.)
+
+By subtracting user's birth year from currentYear,
+user's birth month from currentMonth & user's birth date from
+currentDate, We can i)get user's today's age and ii)display it using
+displayResult() function. After defining this displayResult() outside 
+ageCalculate(), we call this displayResult() inside ageCalculate().
+
+Finally, We implement functioning for 'reset' button:
+i)Target a button and store it's value to a variable
+ii)Add an event to that variable
+iii)Using DOM attributes 'textContent' & 'value', we reset required fields.
+
