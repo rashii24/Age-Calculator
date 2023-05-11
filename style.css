@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(145, 145, 52, 0.699);
+}
+
+.container{
+    width: 40%;
+    min-width: 450px;
+    padding: 50px 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.container *{
+    font-family: "Poppins",sans-serif;
+    border: none;
+    outline: none;
+}
+.inputs-wrapper{
+    background: black;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+
+}
+input, .calculate{
+    height: 50px;
+    background: white;
+    color: brown;
+    font-weight: 500;
+    border-radius: 5px;
+}
+input{
+    width: 60%;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.calculate{
+    width: 30%;
+    float: right;
+    background: yellowgreen;
+    font: 1em sans-serif;
+    font-weight: bold;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.outputs-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.outputs-wrapper div{
+    width: 100px;
+    height: 100px;
+    background: black;
+    color: aliceblue;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+}
+span{
+    font-size: 30px;
+    font-weight: 500;
+}
+p{
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+}
+
+.reset-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.clear{
+    width: 30%;
+    height: 50px;
+    background: rgba(164, 159, 159, 0.904);
+    font: 1em sans-serif;
+    font-weight: bold;
+    border-radius: 18px;
+    cursor: pointer;
+}
